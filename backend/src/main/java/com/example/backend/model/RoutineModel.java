@@ -28,5 +28,4 @@ public class RoutineModel {
     @Column(name = "`interval`")
     private Interval interval;
 
-
 }
