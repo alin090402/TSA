@@ -7,7 +7,7 @@ import com.example.backend.service.BotService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.List; 
 
 @RestController
 @CrossOrigin
@@ -16,7 +16,6 @@ import java.util.List;
 public class BotController {
     private final BotService botService;
     private final BotMapper botMapper;
-
     @GetMapping
     public List<BotModel> getBots() {
         return botService.getBots();
